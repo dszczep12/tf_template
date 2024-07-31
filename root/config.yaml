@@ -1,5 +1,4 @@
 # config.yaml
-gcp_credentials_file: "path/to/credentials.json"
 gcp_project_id: "tf-proj-sandbox"
 gcp_region: "us-central1"
 gcp_zone: "us-central1-a"
