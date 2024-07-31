@@ -1,0 +1,11 @@
+# config.yaml
+gcp_credentials_file: "path/to/credentials.json"
+gcp_project_id: "tf-proj-sandbox"
+gcp_region: "us-central1"
+gcp_zone: "us-central1-a"
+instance_name: "my-instance"
+machine_type: "n1-standard-1"
+boot_disk_image: "debian-cloud/debian-10"
+network: "default"
+# ssh_user: "your-ssh-username"
+# ssh_public_key: "your-ssh-public-key"

@@ -1,0 +1,20 @@
+provider "google" {
+  project     = "{{ gcp_project_id }}"
+  region      = "{{ gcp_region }}"
+}
+
+resource "google_compute_instance" "default" {
+  name         = "{{ instance_name }}"
+  machine_type = "{{ machine_type }}"
+  zone         = "{{ gcp_zone }}"
+
+  boot_disk {
+    initialize_params {
+      image = "{{ boot_disk_image }}"
+    }
+  }
+
+  network_interface {
+    network = "{{ network }}"
+  }
+}
